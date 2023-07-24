@@ -70,19 +70,32 @@
                 align-items: center;
             }
 
-            .header-container img {
+            .logo-image {
                 margin-bottom: 1rem;
             }
+        }
 
-            nav ul {
+        @media (max-width: 530px) {
+            .grid-items {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .logo-image {
+                scale: 0.75;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 300px) {
+            .grid-items {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-                justify-items: center;
             }
 
-            nav ul li {
-                margin-bottom: 1rem;
+            .logo-image {
+                scale: 0.6;
+                margin-bottom: 0;
             }
         }
 
@@ -94,8 +107,8 @@
             margin: auto;
         }
 
-        .header-container img {
-            width: 300px;
+        .logo-image {
+            width: 350px;
             /* Adjust the width as needed */
         }
 
@@ -185,9 +198,9 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="logo.png" alt="Urban-G Logo">
+            <img class="logo-image" src="logo.png" alt="Urban-G Logo">
             <nav>
-                <ul>
+                <ul class="grid-items">
                     <li><a href="#about">About</a></li>
                     <li><a href="#why_choose">Why</a></li>
                     <li><a href="#tokens">Tokens</a></li>
