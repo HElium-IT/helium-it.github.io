@@ -48,22 +48,54 @@
             background-color: #f9f9f9;
         }
 
+        /* Original Header Styles with Linear Gradient Background */
         header {
-            background-color: #333;
+            background: linear-gradient(to right, #2c92ff, #004b9b);
             color: #fff;
             padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            z-index: -2;
+        }
+
+        header:hover {
+            background: linear-gradient(to right, #4da3ff, #002a58);
+            z-index: -2;
+        }
+
+        /* Updated Styles for Responsive Navigation */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-container img {
+                margin-bottom: 1rem;
+            }
+
+            nav ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                justify-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 1rem;
+            }
         }
 
         .header-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 1200px;
+            max-width: 800px;
             margin: auto;
         }
 
         .header-container img {
-            width: 100px;
+            width: 300px;
             /* Adjust the width as needed */
         }
 
@@ -74,10 +106,7 @@
 
         nav ul li {
             margin-left: 1rem;
-        }
-
-        nav ul li:first-child {
-            margin-left: 0;
+            font-size: large;
         }
 
         nav ul li a {
@@ -96,7 +125,7 @@
             max-width: 800px;
             margin: auto;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
         }
 
