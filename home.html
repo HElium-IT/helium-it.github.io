@@ -8,6 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Add your custom CSS styles here */
+
+        /* Neat Divider Styles */
+        .section-divider {
+            position: relative;
+            height: 10px;
+            margin: 1rem;
+            background-color: #ffffff;
+        }
+
+        .section-divider:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to right, transparent, #0800ff, transparent);
+            z-index: 1;
+        }
+
+        .section-divider:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to right, transparent, #ffffff, transparent);
+            z-index: 1;
+        }
+
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -149,7 +181,7 @@
             experience and benefits for investors, offering an opportunity for everyone to become a real homeowner
             regardless of financial status.</p>
     </section>
-    <hr>
+    <div class="section-divider"></div> <!-- Neat Divider -->
     <section id="why_choose">
         <h2><i class="fas fa-star"></i> Why Choose Urban-G?</h2>
         <p>Urban-G aims to bridge the gap in traditional real estate ownership, making investors feel like real owners.
@@ -161,7 +193,7 @@
         <p>By combining real estate tokenization and hospitality, Urban-G creates a perfect blend that benefits both
             investors and tenants, promising a game-changing impact in the market.</p>
     </section>
-    <hr>
+    <div class="section-divider"></div> <!-- Neat Divider -->
     <section id="tokens">
         <h2><i class="fas fa-coins"></i> Urban-G Tokens</h2>
         <p>Urban-G has two types of tokens:</p>
@@ -178,7 +210,7 @@
             tokens to enter a DAO. The minting of SUB tokens occurs at a 1:1 ratio, with each DAO token associated with
             a SUB token.</p>
     </section>
-    <hr>
+    <div class="section-divider"></div> <!-- Neat Divider -->
     <section id="investment">
         <h2><i class="fas fa-chart-line"></i> Investment Performance</h2>
         <p>Urban-G's revenue model includes various revenue streams like buying and selling buildings, rental income,
@@ -186,7 +218,7 @@
             rate of return (IRR), projected to be positive over periods of 5, 10, 20, and 30 years based on existing
             properties and expected enhancements from Urban-G's business model.</p>
     </section>
-    <hr>
+    <div class="section-divider"></div> <!-- Neat Divider -->
     <section id="join_team">
         <h2><i class="fas fa-users"></i> Join Our Team</h2>
         <p>Urban-G is looking for talented and passionate individuals to join their team. If you believe in our vision,
@@ -202,6 +234,7 @@
         </ul>
         <p>If you're interested, get in touch with us!</p>
     </section>
+    <div class="section-divider"></div> <!-- Neat Divider -->
     <div id="contact" class="call-to-action">
         <h3>Are You Ready to Be a Part of the Future of Real Estate Investment?</h3>
         <a href="mailto:join@urban-g.com">Contact Us</a>
