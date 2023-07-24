@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban-G: The Future of Real Estate Investment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+
+        /* Neat Divider Styles */
+        .section-divider {
+            position: relative;
+            height: 10px;
+            margin: 1rem;
+            background-color: #ffffff;
+        }
+
+        .section-divider:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to right, transparent, #007bff, transparent);
+            z-index: 1;
+        }
+
+        .section-divider:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to right, transparent, #ffffff, transparent);
+            z-index: 1;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Original Header Styles with Linear Gradient Background */
+        header {
+            background: linear-gradient(to right, #2c92ff, #004b9b);
+            color: #fff;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            z-index: -2;
+        }
+
+        header:hover {
+            background: linear-gradient(to right, #4da3ff, #002a58);
+            z-index: -2;
+        }
+
+        /* Updated Styles for Responsive Navigation */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-container img {
+                margin-bottom: 1rem;
+            }
+
+            nav ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                justify-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .header-container img {
+            width: 300px;
+            /* Adjust the width as needed */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+            font-size: large;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .highlight {
+            color: #007bff;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .call-to-action a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.8rem 1.2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-to-action a:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .fa {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .fa-heart {
+            color: #ff0000;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Urban-G Logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#why_choose">Why</a></li>
+                    <li><a href="#tokens">Tokens</a></li>
+                    <li><a href="#join_team">Join</a></li>
+                    <li><a href="#investment">Investment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <section id="about">
+        <h2><i class="fas fa-building"></i> About Urban-G</h2>
+        <p>Urban-G is a pioneering company that revolutionizes real estate management by partnering with Decentralized
+            Autonomous Organizations (DAOs). Each DAO owns a building and its corresponding metaverse, and investors
+            hold DAO tokens proportionally to their investment.</p>
+        <p>Urban-G's contracts with each DAO ensure continuous management as long as the DAO remains the building owner,
+            creating a symbiotic relationship between investors and the property.</p>
+        <p>With a groundbreaking format, Urban-G combines tokenization and accommodation models to enhance the living
+            experience and benefits for investors, offering an opportunity for everyone to become a real homeowner
+            regardless of financial status.</p>
+    </section>
+    <div class="section-divider"></div> <!-- Neat Divider -->
+    <section id="why_choose">
+        <h2><i class="fas fa-star"></i> Why Choose Urban-G?</h2>
+        <p>Urban-G aims to bridge the gap in traditional real estate ownership, making investors feel like real owners.
+            Alongside economic and tangible owner rights, investors receive various benefits such as discounts, referral
+            codes, free services, and more.</p>
+        <p>The company envisions the future of hospitality by offering a new, safe, legal, and innovative path that
+            complements the evolving nature of lodging services and overcomes challenges faced by older sharing models
+            due to restrictive city laws and condominium policies.</p>
+        <p>By combining real estate tokenization and hospitality, Urban-G creates a perfect blend that benefits both
+            investors and tenants, promising a game-changing impact in the market.</p>
+    </section>
+    <div class="section-divider"></div> <!-- Neat Divider -->
+    <section id="tokens">
+        <h2><i class="fas fa-coins"></i> Urban-G Tokens</h2>
+        <p>Urban-G has two types of tokens:</p>
+        <ul>
+            <li><strong>DAO Tokens:</strong> Represent ownership in the DAO, which is the sole proprietor of the
+                building and its associated metaverse space. These tokens are not tradable on secondary markets and can
+                only be bought and sold through the Urban-G platform to comply with US securities laws.</li>
+            <li><strong>SUB Tokens:</strong> Complimentary tokens provided to investors upon purchasing the main DAO
+                token. They offer discounted payment for Urban-G services and priority access to future investments. SUB
+                tokens are expected to become a versatile currency usable in various accommodation contexts through
+                partnerships with industry operators.</li>
+        </ul>
+        <p>The tokenomics involve the acquisition of opportunities and assets by the DAO, with investors purchasing DAO
+            tokens to enter a DAO. The minting of SUB tokens occurs at a 1:1 ratio, with each DAO token associated with
+            a SUB token.</p>
+    </section>
+    <div class="section-divider"></div> <!-- Neat Divider -->
+    <section id="investment">
+        <h2><i class="fas fa-chart-line"></i> Investment Performance</h2>
+        <p>Urban-G's revenue model includes various revenue streams like buying and selling buildings, rental income,
+            sale of services, and projected appreciation. The investment performance is measured through the internal
+            rate of return (IRR), projected to be positive over periods of 5, 10, 20, and 30 years based on existing
+            properties and expected enhancements from Urban-G's business model.</p>
+    </section>
+    <div class="section-divider"></div> <!-- Neat Divider -->
+    <section id="join_team">
+        <h2><i class="fas fa-users"></i> Join Our Team</h2>
+        <p>Urban-G is looking for talented and passionate individuals to join their team. If you believe in our vision,
+            we welcome:</p>
+        <ul>
+            <li>Blockchain Geniuses</li>
+            <li>Full-stack Developers</li>
+            <li>Visionary Designers</li>
+            <li>Social Media Marketing Gurus</li>
+            <li>Blockchain Academics</li>
+            <li>Real Estate Influencers</li>
+            <li>Hospitality Experts</li>
+        </ul>
+        <p>If you're interested, get in touch with us!</p>
+    </section>
+    <div class="section-divider"></div> <!-- Neat Divider -->
+    <div id="contact" class="call-to-action">
+        <h3>Are You Ready to Be a Part of the Future of Real Estate Investment?</h3>
+        <a href="mailto:join@urban-g.com">Contact Us</a>
+    </div>
+    <br>
+    <footer>
+        <p>&copy; 2023 Urban-G. All rights reserved. Made with <i class="fas fa-heart"></i> by Urban-G Team.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
