@@ -17,8 +17,44 @@
         header {
             background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 1rem;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .header-container img {
+            width: 100px;
+            /* Adjust the width as needed */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1);
+            text-decoration: underline;
         }
 
         section {
@@ -49,14 +85,32 @@
             padding: 1rem;
             text-align: center;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Urban-G: Redefining Real Estate Investment</h1>
+        <div class="header-container">
+            <img src="logo.png" alt="Urban-G Logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#why_choose">Why</a></li>
+                    <li><a href="#tokens">Tokens</a></li>
+                    <li><a href="#join_team">Join</a></li>
+                    <li><a href="#investment">Investment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section>
+
+
+    <section id="about">
         <h2>About Urban-G</h2>
         <p>Urban-G is a pioneering company that revolutionizes real estate management by partnering with Decentralized
             Autonomous Organizations (DAOs). Each DAO owns a building and its corresponding metaverse, and investors
@@ -68,7 +122,7 @@
             regardless of financial status.</p>
     </section>
     <hr>
-    <section>
+    <section id="why_choose">
         <h2>Why Choose Urban-G?</h2>
         <p>Urban-G aims to bridge the gap in traditional real estate ownership, making investors feel like real owners.
             Alongside economic and tangible owner rights, investors receive various benefits such as discounts, referral
@@ -80,7 +134,7 @@
             investors and tenants, promising a game-changing impact in the market.</p>
     </section>
     <hr>
-    <section>
+    <section id="tokens">
         <h2>Urban-G Tokens</h2>
         <p>Urban-G has two types of tokens:</p>
         <ul>
@@ -97,7 +151,7 @@
             a SUB token.</p>
     </section>
     <hr>
-    <section>
+    <section id="investment">
         <h2>Investment Performance</h2>
         <p>Urban-G's revenue model includes various revenue streams like buying and selling buildings, rental income,
             sale of services, and projected appreciation. The investment performance is measured through the internal
@@ -105,7 +159,7 @@
             properties and expected enhancements from Urban-G's business model.</p>
     </section>
     <hr>
-    <section>
+    <section id="join_team">
         <h2>Join Our Team</h2>
         <p>Urban-G is looking for talented and passionate individuals to join their team. If you believe in our vision,
             we welcome:</p>
@@ -120,7 +174,7 @@
         </ul>
         <p>If you're interested, get in touch with us!</p>
     </section>
-    <div class="call-to-action">
+    <div id="contact" class="call-to-action">
         <h3>Are You Ready to Be a Part of the Future of Real Estate Investment?</h3>
         <a href="mailto:join@urban-g.com">Contact Us</a>
     </div>
